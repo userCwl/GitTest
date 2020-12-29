@@ -23,6 +23,8 @@ public class DemoVo {
 
     private String password;
 
+    private boolean isTrue;
+
 
 
 }

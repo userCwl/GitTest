@@ -30,4 +30,5 @@ public class Demo {
     @TableField(value = "password")
     private String password;
 
+
 }

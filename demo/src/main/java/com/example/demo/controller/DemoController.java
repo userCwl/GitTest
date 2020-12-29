@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import com.example.demo.aspect.SystemControllerLog;
 import com.example.demo.domain.dto.DemoDto;
 import com.example.demo.domain.entity.Demo;
+import com.example.demo.domain.vo.DemoVo;
 import com.example.demo.domain.vo.Result;
 import com.example.demo.service.DemoService;
 import io.swagger.annotations.Api;
@@ -65,6 +66,13 @@ public class DemoController {
     public Result setDemo(@RequestBody DemoDto demoDto){
         System.out.println("设置demo实例");
         return Result.show("");
+    }
+
+    @ApiOperation("获取demoVo实例")
+    @GetMapping("/demoVo")
+    public Result getDemoVo(@RequestParam Integer id){
+        DemoVo demoVo = DemoVo.builder().password("1111").username("2222").id(11).isTrue(true).build();
+        return Result.show(demoVo);
     }
 
 

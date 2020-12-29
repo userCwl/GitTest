@@ -58,7 +58,7 @@ public class DemoController {
 
 //        session.setAttribute("userId",userId);
 
-        return Result.show("");
+        return Result.show("啊啊啊"); 
     }
 
     @ApiOperation("设置demo实例")
